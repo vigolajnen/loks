@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700&subset=cyrillic");
+@import "libs/normalize.scss";
+
+// @import "libs/magnific-popup.scss";
+// @import "libs/jquery.jscrollpane.scss";
+// @import "libs/animate.scss";
+// @import "libs/slick-theme.scss";
+// @import "libs/slick.scss";
+// @import "libs/jquery-ui.scss";
+
+
+@import "variables.scss";
+@import "base.scss";
+@import "utils.scss";
+@import "mixins.scss";
+@import "sprite-png.scss";
+
+
+@import "blocks/wrapper.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
+
+
+@import "blocks/buttons.scss";
+@import "blocks/links.scss";
+
+@import "blocks/navigation.scss";
+@import "blocks/promo.scss";
+@import "blocks/sprite.scss";
+
+@import "blocks/marker.scss";
+@import "blocks/phone.scss";
+@import "blocks/logo.scss";

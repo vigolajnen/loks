@@ -1,0 +1,35 @@
+.wrapper {
+  padding: 0 4.6875%;
+
+  &--top {
+    margin: 40px auto 0;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 150px;
+    }
+  }
+
+  &--top-2 {
+    margin: 40px auto 0;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 120px;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &--no-pdmg {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 1.6875%;
+  }
+
+  @media (min-width: $desktop-width-xl) {
+    padding: 0 4.6875%;
+
+  }
+}
