@@ -1,0 +1,10 @@
+.media {
+  background-color: #F2F2F2;
+  @include respond-above(md) {
+    padding: 4rem 3.5rem;
+  }
+
+  &__list {
+    @include listReset();
+  }
+}

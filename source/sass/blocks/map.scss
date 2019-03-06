@@ -1,0 +1,15 @@
+$map-bg: #ecf9ff;
+
+.map {
+
+  background-image: url("../img/map/map.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $map-bg;
+
+  @media (min-width: $mobile-width-x) {
+    width: 100%;
+    min-height: 600px;
+  }
+
+}

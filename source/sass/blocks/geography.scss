@@ -1,0 +1,38 @@
+.geography {
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__nav {
+    background: #005BA6;
+    text-align: center;
+    @include respond-above(md) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 300px;
+    }
+  }
+
+  &__list {
+    @include listReset();
+  }
+
+  &__item {
+    padding: 25px;
+    color: rgba(255, 255, 255, 0.6);
+
+    &--active {
+      background: #014277;
+      color: #ffffff;
+    }
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,23 @@
+.services {
+  background-color: #003F73;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding: 5rem;
+    width: 100%;
+    background-color: #003F73;
+
+    @include respond-above(md) {
+      padding: 5rem;
+      width: 50%;
+    }
+
+    &--dark {
+      background-color: #003662;
+    }
+  }
+}

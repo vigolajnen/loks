@@ -1,0 +1,36 @@
+.advantages {
+  &__wrapper {
+    background-color: #003F73;
+  }
+
+  &__list {
+    @include listReset();
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 1.5rem;
+
+    background-color: #ffffff;
+
+    @include respond-above(md) {
+      padding: 4.5rem;
+      max-width: 80vw;
+    }
+  }
+}
+
+.advantages__item {
+  width: 100%;
+  padding: 0 1rem;
+
+  @include respond-above(md) {
+    width: calc(100% / 3);
+    padding: 0 3rem;
+  }
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(22, 22, 22, 0.02);
+  }
+}

@@ -15,20 +15,32 @@
 @import "mixins.scss";
 @import "sprite-png.scss";
 
+@import "blocks/sprite.scss";
+
 
 @import "blocks/wrapper.scss";
 
 @import "blocks/page-header.scss";
 @import "blocks/page-footer.scss";
 
-
 @import "blocks/buttons.scss";
 @import "blocks/links.scss";
 
 @import "blocks/navigation.scss";
+@import "blocks/logo.scss";
+@import "blocks/popup.scss";
+
+// index
 @import "blocks/promo.scss";
-@import "blocks/sprite.scss";
+@import "blocks/advantages.scss";
+@import "blocks/services.scss";
+@import "blocks/news.scss";
 
 @import "blocks/marker.scss";
 @import "blocks/phone.scss";
-@import "blocks/logo.scss";
+
+@import "blocks/media.scss";
+
+@import "blocks/map.scss";
+@import "blocks/geography.scss";
+@import "blocks/fixed.scss";

@@ -162,23 +162,10 @@ gulp.task("scripts", function () {
 
 gulp.task("jsmin", function () {
   gulp.src([
-      "source/js/scrollbar.js",
-      "source/js/viewportChecker.js",
-
       "source/js/mobile.js",
       "source/js/header.js ",
       "source/js/slider.js ",
       "source/js/popup.js",
-      "source/js/tabs.js",
-      "source/js/catalog.js",
-      "source/js/cities.js",
-      "source/js/product.js",
-      "source/js/select.js",
-      "source/js/counter.js",
-      "source/js/acc.js",
-      "source/js/sidebar.js",
-      "source/js/page-brands.js"
-
     ])
     .pipe(concat("main.min.js"))
     .pipe(uglify({
@@ -187,14 +174,6 @@ gulp.task("jsmin", function () {
     .pipe(gulp.dest("build/js"));
 });
 
-gulp.task("jsmin-filters", function () {
-  gulp.src(["source/js/filters.js"])
-    .pipe(concat("filters.min.js"))
-    .pipe(uglify({
-      mangle: false
-    }))
-    .pipe(gulp.dest("build/js"));
-});
 
 gulp.task("jsmin-map", function () {
   gulp.src(["source/js/map.js"])
@@ -215,7 +194,7 @@ gulp.task("serve", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/js/**/*.js", ["jsmin", "jsmin-filters", "jsmin-map"]);
+  gulp.watch("source/js/**/*.js", ["jsmin", "jsmin-map"]);
   gulp.watch("source/**/*.html", ["html"]).on("change", server.reload);
 });
 
@@ -230,7 +209,6 @@ gulp.task("build", function (done) {
     "html",
     "vendor",
     "jsmin",
-    "jsmin-filters",
     "jsmin-map",
     done
   );

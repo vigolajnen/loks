@@ -14,7 +14,7 @@ function initMap() {
           name: 'Офис',
           address: '195248 г. Санкт-Петербург, ул.Партизанская, д.27',
           phones: ['8 (812) 676-98-00', '8 (812) 676-98-01'],
-          emails: ['mail@nescospb.ru'],
+          emails: ['mail@Loksspb.ru'],
           button: 'Смотреть на карте',
           location: {
             lat: 59.9479071,
@@ -25,7 +25,7 @@ function initMap() {
           name: 'Склад',
           address: '188681, Лен. обл., Всеволожский р-н, Свердловское гор-е п., в р-не д. Новосаратовка',
           phones: ['8 (812) 416-30-93'],
-          emails: ['skladspb@nescospb.ru', 'logistika@nescospb.ru'],
+          emails: ['skladspb@Loksspb.ru', 'logistika@Loksspb.ru'],
           button: 'Смотреть на карте',
           location: {
             lat: 60.286854,
@@ -45,7 +45,7 @@ function initMap() {
           name: 'Офис',
           address: 'Архангельск',
           phones: ['8 (812) 676-98-00', '8 (812) 676-98-01'],
-          emails: ['mail@nescospb.ru'],
+          emails: ['mail@Loksspb.ru'],
           button: 'Смотреть на карте',
           location: {
             lat: 64.5612228,
@@ -56,7 +56,7 @@ function initMap() {
           name: 'Склад',
           address: 'Архангельск',
           phones: ['8 (812) 416-30-93'],
-          emails: ['skladspb@nescospb.ru', 'logistika@nescospb.ru'],
+          emails: ['skladspb@Loksspb.ru', 'logistika@Loksspb.ru'],
           button: 'Смотреть на карте',
           location: {
             lat: 64.5612228,
@@ -76,7 +76,7 @@ function initMap() {
           name: 'Офис',
           address: 'Великий Новгород',
           phones: ['8 (812) 676-98-00', '8 (812) 676-98-01'],
-          emails: ['mail@nescospb.ru'],
+          emails: ['mail@Loksspb.ru'],
           button: 'Смотреть на карте',
           location: {
             lat: 58.5562984,
@@ -87,7 +87,7 @@ function initMap() {
           name: 'Склад',
           address: 'Великий Новгород',
           phones: ['8 (812) 416-30-93'],
-          emails: ['skladspb@nescospb.ru', 'logistika@nescospb.ru'],
+          emails: ['skladspb@Loksspb.ru', 'logistika@Loksspb.ru'],
           button: 'Смотреть на карте',
           location: {
             lat: 58.5562984,
@@ -107,7 +107,7 @@ function initMap() {
           name: 'Офис',
           address: 'Калининград',
           phones: ['8 (812) 676-98-00', '8 (812) 676-98-01'],
-          emails: ['mail@nescospb.ru'],
+          emails: ['mail@Loksspb.ru'],
           button: 'Смотреть на карте',
           location: {
             lat: 54.7116885,
@@ -118,7 +118,7 @@ function initMap() {
           name: 'Склад',
           address: 'Калининград',
           phones: ['8 (812) 416-30-93'],
-          emails: ['skladspb@nescospb.ru', 'logistika@nescospb.ru'],
+          emails: ['skladspb@Loksspb.ru', 'logistika@Loksspb.ru'],
           button: 'Смотреть на карте',
           location: {
             lat: 54.7116885,
@@ -138,7 +138,7 @@ function initMap() {
           name: 'Офис',
           address: 'Псков',
           phones: ['8 (812) 676-98-00', '8 (812) 676-98-01'],
-          emails: ['mail@nescospb.ru'],
+          emails: ['mail@Loksspb.ru'],
           button: 'Смотреть на карте',
           location: {
             lat: 57.8004488,
@@ -149,7 +149,7 @@ function initMap() {
           name: 'Склад',
           address: 'Псков',
           phones: ['8 (812) 416-30-93'],
-          emails: ['skladspb@nescospb.ru', 'logistika@nescospb.ru'],
+          emails: ['skladspb@Loksspb.ru', 'logistika@Loksspb.ru'],
           button: 'Смотреть на карте',
           location: {
             lat: 57.8004488,

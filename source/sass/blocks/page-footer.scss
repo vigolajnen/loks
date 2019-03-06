@@ -1,0 +1,141 @@
+$color-bg: #1F1F1F;
+$color-link: #D8D8D8;
+
+.page-footer {
+  background-color: $color-bg;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 20px;
+  @include respond-above(sm) {
+    padding: 0 5%;
+  }
+}
+
+.page-footer__column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-direction: column;
+
+  justify-content: space-between;
+  
+  padding: 0;
+  width: 100%;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  @include respond-above(sm) {
+    padding: 5rem 2rem 3.5rem;
+    width: 33.33%;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  @include respond-above(md) {
+    flex-direction: row;
+  }
+
+
+  &--1 {
+    @include respond-above(md) {
+      padding-left: 0;
+    }
+  }
+
+  &--2 {   
+    @include respond-above(md) {
+      width: 20vw;
+    }
+  }
+
+  &--3 {
+    border-right: none;
+    @include respond-above(md) {
+      padding-right: 0;
+    }
+  }
+
+  &--4 {
+    width: 100%;
+    padding: 2rem 0;
+    border-right: none;
+    border-bottom: none;
+  }
+}
+
+.page-footer__tel-and-popup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  & .phone {
+    color: #D8D8D8;
+    margin-bottom: 1.5rem;
+  }
+
+  & .button-link {
+    padding: 0;
+
+    line-height: normal;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    text-align: left;
+
+    opacity: 0.4;
+
+    @include ff('font-size', (375px: 8px, 1440px: 12px));
+
+    @include respond-above(md) {
+      text-align: right;
+    }
+  }
+}
+
+.page-footer__list {
+  @include listReset();
+}
+
+.page-footer__item {
+  margin-bottom: 0.65rem;
+  @include respond-above(sm) {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.page-footer__link {
+  padding: 10px 0;
+  text-decoration: none;
+  line-height: normal;
+
+  color: $color-link;
+
+  @include ff('font-size', (375px: 10px, 1440px: 16px));
+}
+
+.page-footer__copyright {
+  color: #D8D8D8;
+
+  opacity: 0.5;
+  @include ff('font-size', (375px: 10px, 1440px: 16px));
+}
+
+.page-footer__studio {
+  color: #D8D8D8;
+
+  opacity: 0.5;
+  @include ff('font-size', (375px: 10px, 1440px: 16px));
+
+  &-link {
+    text-decoration: none;
+    color: #D8D8D8;
+
+    opacity: 0.5;
+  }
+}

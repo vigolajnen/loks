@@ -1,0 +1,28 @@
+.fixed {
+  width: 100%;
+  height: 61px;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+
+  background: #fff;
+  border-bottom: 1px solid #f3f3f3;
+
+
+  transform: translateZ(0);
+  transition: all .55s;
+
+  @media (min-width: $tablet-width) {
+    height: 81px;
+  }
+}
+
+.fixed-top {
+  top: 0;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.fixed-bottom {
+  top: -100px;
+  transform: translate3d(0, -100%, 0);
+}

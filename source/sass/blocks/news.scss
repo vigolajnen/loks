@@ -1,0 +1,39 @@
+.news {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include respond-above(md) {
+      margin-top: 120px;
+      margin-bottom: 135px;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    padding-left: 5rem;
+  }
+
+  &__left {
+    width: 100%;
+
+    @include respond-above(md) {
+      padding-left: 5rem;
+      width: 60%;
+    }
+  }
+
+  &__right {
+    width: 100%;
+
+    @include respond-above(md) {
+      padding-left: 5rem;
+      width: 40%;
+    }
+  }
+
+  &__list {
+    @include listReset();
+  }
+}

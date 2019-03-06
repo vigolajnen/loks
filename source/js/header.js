@@ -26,16 +26,11 @@ var oldScrollY = 0;
 
 
 
-if (window.outerWidth > 768) {
-  var div = document.querySelector('.page-header__bottom');
-  div.classList.add('fixed');
-} else {
-  var div = document.querySelector('.page-header__top');
-  document.querySelector('.page-header__bottom').remove('fixed');
-}
+var div = document.querySelector('.page-header');
+div.classList.add('fixed');
 
 $(window).ready(function () {
-  // div.classList.add('fixed');
+  div.classList.add('fixed');
   window.onscroll = function () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
     var dY = scrolled - oldScrollY;

@@ -1,3 +1,5 @@
 .phone {
-  
+  text-decoration: none;
+  line-height: normal;
+  @include ff('font-size', (375px: 10px, 1440px: 16px));
 }

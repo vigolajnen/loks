@@ -1,3 +1,37 @@
 .promo {
-  
+  background-color: #003F73;
+
+  @include respond-above(md) {
+    padding-top: 190px;
+    padding-bottom: 110px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+  }
+
+  &__info {
+    width: 100%;
+
+    @include respond-above(md) {
+      width: 60%;
+      max-width: 680px;
+    }
+  }
+
+  &__video {
+    width: 100%;
+
+    @include respond-above(md) {
+      width: 40%;
+    }
+
+    & video {
+      max-width: 100%;
+    }
+  }
 }
