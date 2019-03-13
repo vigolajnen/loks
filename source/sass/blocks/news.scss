@@ -3,8 +3,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 
     @include respond-above(md) {
+      
       margin-top: 120px;
       margin-bottom: 135px;
     }
@@ -17,8 +19,10 @@
 
   &__left {
     width: 100%;
+    padding: 0 1.5rem;
 
     @include respond-above(md) {
+      padding: 0;
       padding-left: 5rem;
       padding-top: 62px;
       width: 60%;
@@ -83,10 +87,16 @@
   &__number {
     display: block;
     margin-bottom: 20px;
-    line-height: 47px;
+    line-height: 20px;
     font-size: 92px;
 
     color: #005BA6;
     font-weight: 600;
+
+    @include ff('font-size', (375px: 49px, 1440px: 92px));
+
+    @include respond-above(md) {
+      line-height: 47px;
+    }
   }
 }

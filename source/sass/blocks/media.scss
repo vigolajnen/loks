@@ -1,5 +1,6 @@
 .media {
   background-color: #F2F2F2;
+  padding: 2rem 0;
   @include respond-above(md) {
     padding: 4rem 3.5rem;
   }
@@ -10,6 +11,11 @@
 
   &__list {
     @include listReset();
+    padding: 0 1.5rem;
+
+    @include respond-above(md) {
+      padding: 0;
+    }
   }
 
   &__item {

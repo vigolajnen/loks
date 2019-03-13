@@ -1,5 +1,14 @@
 .phone {
   text-decoration: none;
   line-height: normal;
+
+  line-height: normal;
+  font-size: 16px;
+
+  color: #ffffff;
   @include ff('font-size', (375px: 10px, 1440px: 16px));
+
+  &__code {
+    color: #999999;
+  }
 }

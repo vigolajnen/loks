@@ -14,13 +14,18 @@
 
     background-color: #ffffff;
 
-    @include respond-above(md) {
-      padding: 4.5rem;
-      max-width: 80vw;
+    @include respond-above(sm) {
+      padding: 4.2rem 0;
+    }
+
+    @include respond-above(lg) {
+     padding: 4.2rem 8rem;
+     max-width: 90vw;
     }
   }
 
   &__marker {
+    margin-bottom: 20px;
     line-height: 6px;
     font-size: 11px;
 
@@ -32,6 +37,7 @@
   }
 
   &__number {
+    margin-bottom: 30px;
     line-height: 48px;
     font-size: 48px;
     font-weight: 600;
@@ -40,13 +46,17 @@
   }
 
   &__unit {
+    margin-left: 10px;
     line-height: 6px;
     font-size: 11px;
 
     color: #005BA6;
+
+    text-transform: uppercase;  
   }
 
   &__text {
+    margin: 0;
     line-height: 20px;
     font-size: 15px;
 
@@ -59,13 +69,27 @@
 .advantages__item {
   width: 100%;
   padding: 0 1rem;
+  margin-bottom: 20px;
 
   @include respond-above(md) {
     width: calc(100% / 3);
     padding: 0 3rem;
-  }
+    margin-bottom: 0;
 
-  &:not(:last-child) {
-    border-right: 1px solid rgba(22, 22, 22, 0.02);
+    &:not(:last-child) {
+      border-right: 1px solid rgba(22, 22, 22, 0.02);
+    }
+
+    &:first-child {
+      & .advantages__text {
+        max-width: 170px;
+      }
+    }
+
+    &:nth-child(2) {
+      & .advantages__text {
+        max-width: 200px;
+      }
+    }
   }
 }

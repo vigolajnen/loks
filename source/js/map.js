@@ -3,168 +3,83 @@
 
 function initMap() {
 
-  var cities = [{
+  var areas = [{
       id: 1,
-      name: 'Санкт-Петербург',
+      name: 'Тосненский',
       center: {
         lat: 60.2379579,
         lng: 30.337719
       },
-      builds: [{
-          name: 'Офис',
-          address: '195248 г. Санкт-Петербург, ул.Партизанская, д.27',
-          phones: ['8 (812) 676-98-00', '8 (812) 676-98-01'],
-          emails: ['mail@Loksspb.ru'],
-          button: 'Смотреть на карте',
-          location: {
-            lat: 59.9479071,
-            lng: 30.439998
-          }
-        },
-        {
-          name: 'Склад',
-          address: '188681, Лен. обл., Всеволожский р-н, Свердловское гор-е п., в р-не д. Новосаратовка',
-          phones: ['8 (812) 416-30-93'],
-          emails: ['skladspb@Loksspb.ru', 'logistika@Loksspb.ru'],
-          button: 'Смотреть на карте',
-          location: {
-            lat: 60.286854,
-            lng: 30.710875
-          }
+      markers: [{
+        location: {
+          lat: 60.2379579,
+          lng: 30.337719
         }
-      ]
+      }]
     },
     {
       id: 2,
-      name: 'Архангельск',
+      name: 'Гатчинский',
       center: {
-        lat: 64.5612228,
-        lng: 40.2758267
+        lat: 59.3474561,
+        lng: 29.5764328
       },
-      builds: [{
-          name: 'Офис',
-          address: 'Архангельск',
-          phones: ['8 (812) 676-98-00', '8 (812) 676-98-01'],
-          emails: ['mail@Loksspb.ru'],
-          button: 'Смотреть на карте',
-          location: {
-            lat: 64.5612228,
-            lng: 40.2758267
-          }
-        },
-        {
-          name: 'Склад',
-          address: 'Архангельск',
-          phones: ['8 (812) 416-30-93'],
-          emails: ['skladspb@Loksspb.ru', 'logistika@Loksspb.ru'],
-          button: 'Смотреть на карте',
-          location: {
-            lat: 64.5612228,
-            lng: 40.2758267
-          }
+      markers: [{
+        location: {
+          lat: 59.3474561,
+          lng: 29.5764328
         }
-      ]
+      }]
     },
     {
       id: 3,
-      name: 'Великий Новгород',
+      name: 'Ломоносовский',
       center: {
-        lat: 58.5562984,
-        lng: 31.1723537
+        lat: 59.8043859,
+        lng: 28.4541205
       },
-      builds: [{
-          name: 'Офис',
-          address: 'Великий Новгород',
-          phones: ['8 (812) 676-98-00', '8 (812) 676-98-01'],
-          emails: ['mail@Loksspb.ru'],
-          button: 'Смотреть на карте',
-          location: {
-            lat: 58.5562984,
-            lng: 31.1723537
-          }
-        },
-        {
-          name: 'Склад',
-          address: 'Великий Новгород',
-          phones: ['8 (812) 416-30-93'],
-          emails: ['skladspb@Loksspb.ru', 'logistika@Loksspb.ru'],
-          button: 'Смотреть на карте',
-          location: {
-            lat: 58.5562984,
-            lng: 31.1723537
-          }
+      markers: [{
+        location: {
+          lat: 59.8043859,
+          lng: 28.4541205
         }
-      ]
+      }]
     },
     {
       id: 4,
-      name: 'Калининград',
+      name: 'Пушкинский',
       center: {
-        lat: 54.7116885,
-        lng: 20.3944907
+        lat: 59.7313552,
+        lng: 30.1177291
       },
-      builds: [{
-          name: 'Офис',
-          address: 'Калининград',
-          phones: ['8 (812) 676-98-00', '8 (812) 676-98-01'],
-          emails: ['mail@Loksspb.ru'],
-          button: 'Смотреть на карте',
-          location: {
-            lat: 54.7116885,
-            lng: 20.3944907
-          }
-        },
-        {
-          name: 'Склад',
-          address: 'Калининград',
-          phones: ['8 (812) 416-30-93'],
-          emails: ['skladspb@Loksspb.ru', 'logistika@Loksspb.ru'],
-          button: 'Смотреть на карте',
-          location: {
-            lat: 54.7116885,
-            lng: 20.3944907
-          }
+      markers: [{
+        location: {
+          lat: 59.7313552,
+          lng: 30.1177291
         }
-      ]
+      }]
     },
     {
       id: 5,
-      name: 'Псков',
+      name: 'Красносельский',
       center: {
-        lat: 57.8004488,
-        lng: 28.2082531
+        lat: 59.7817717,
+        lng: 30.0121626
       },
-      builds: [{
-          name: 'Офис',
-          address: 'Псков',
-          phones: ['8 (812) 676-98-00', '8 (812) 676-98-01'],
-          emails: ['mail@Loksspb.ru'],
-          button: 'Смотреть на карте',
-          location: {
-            lat: 57.8004488,
-            lng: 28.2082531
-          }
-        },
-        {
-          name: 'Склад',
-          address: 'Псков',
-          phones: ['8 (812) 416-30-93'],
-          emails: ['skladspb@Loksspb.ru', 'logistika@Loksspb.ru'],
-          button: 'Смотреть на карте',
-          location: {
-            lat: 57.8004488,
-            lng: 28.2082531
-          }
+      markers: [{
+        location: {
+          lat: 59.7817717,
+          lng: 30.0121626
         }
-      ]
+      }]
     }
   ]
 
-  var activeCity = cities[0];
+  var activeArea = areas[2];
 
   // Styles a map in night mode.
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: activeCity.center,
+    center: activeArea.center,
     zoom: 9,
     styles: [{
         "featureType": "landscape",
@@ -265,13 +180,13 @@ function initMap() {
     ]
   });
 
-
-  var markers = activeCity.builds.map(function (build) {
+  var markers = activeArea.markers.map(function (markers) {
     return new google.maps.Marker({
       map: map,
-      position: build.location
+      position: markers.location
     });
   });
+
 
   // Add a marker clusterer to manage the markers.
   var markerCluster = new MarkerClusterer(map, markers, {
@@ -280,67 +195,41 @@ function initMap() {
 
 
 
-  var select = document.querySelector('.select__gap');
-  select.innerHTML = activeCity.name;
+  var listAreas = document.querySelector('.geography__list');
+  listAreas.innerHTML = '';
+  areas.forEach(function (area) {
+    var item = createElementFromHtmlList('<li class="geography__item" data-id=""></li>')
 
-  var selectList = document.querySelector('.select__list');
-  selectList.innerHTML = '';
-  cities.forEach(function (city) {
-    var option = createElementFromHtmlList('<li class="select__item" data-value=""></li>');
-    // option.value = city.id;
-    option.innerHTML = '<span>' + city.name + '</span>';
-    option.attributes[1].value = city.id;
-    selectList.appendChild(option);
+    item.innerHTML = area.name;
+    item.attributes[1].value = area.id;
+    listAreas.appendChild(item);
   });
-  selectList.addEventListener('click', function (evt) {
-    var city = cities.find(function (c) {
-      select.classList.remove('on');
-      selectList.style.display = 'none';
-      select.innerHTML = c.name;
-      return c.id == evt.target.parentNode.attributes[1].value;
+
+  listAreas.addEventListener('click', function (evt) {
+    evt.preventDefault();
+
+    
+    evt.target.classList.add('geography__item--active');
+    var area = areas.find(function (c) {
+      console.log(evt.target);
+ 
+      return c.id == evt.target.attributes[1].value;
     })
 
-    if (city) activeCity = city;
-
-    map.setCenter(activeCity.center);
-    console.log(activeCity);
+    if (area) activeArea = area;
+    
+    map.setCenter(activeArea.center);
+    // console.log(activeArea);
     markers.forEach(function (marker) {
       marker.setMap(null);
     })
-    markers = activeCity.builds.map(function (build) {
+    markers = activeArea.markers.map(function (marker) {
       return new google.maps.Marker({
         map: map,
-        position: build.location
+        position: marker.location
       });
     });
-
-    var wrapper = document.querySelector('.page-contacts__address__wrapper');
-    wrapper.innerHTML = '';
-    activeCity.builds.forEach(function (build) {
-      var item = createElementFromHtml('<div class="page-contacts__address-item"><h3></h3><p></p><button class="button page-contacts__btn-mob" data-href=""></button></div>');
-      item.querySelector('h3').innerText = build.name + ':';
-      item.querySelector('p').innerText = build.address;
-      build.phones.forEach(function (phone) {
-        var a = document.createElement('a');
-        a.href = 'tel:' + clearPhone(phone);
-        a.innerText = phone;
-        item.appendChild(a);
-      })
-      build.emails.forEach(function (email) {
-        var a = document.createElement('a');
-        a.href = 'mailto:' + email;
-        a.innerText = email;
-        item.appendChild(a);
-      })
-
-      item.querySelector('button').innerText = build.button;
-      item.querySelector('button').attributes[1].value == build.location;
-
-      wrapper.appendChild(item);
-    })
-
-  });
-
+  })
 }
 
 function createElementFromHtml(html) {
