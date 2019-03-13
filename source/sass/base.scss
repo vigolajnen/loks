@@ -1,3 +1,45 @@
+$fontOS: "Object Sans", "Arial", sans-serif;
+$fontOSSlanted: "Object Sans Slanted", "Arial", sans-serif;
+$fontOSHeavy: "Object Sans Heavy", "Arial", sans-serif;
+$fontOSHeavySlanted: "Object Sans Heavy Slanted", "Arial", sans-serif;
+
+
+@font-face {
+  font-family: $fontOS;
+  font-display: auto;
+  src: url("../fonts/ObjectSans-Regular.woff2") format("woff2"),
+    url("../fonts/ObjectSans-Regular.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $fontOSSlanted;
+  font-display: auto;
+  src: url("../fonts/ObjectSans-Slanted.woff2") format("woff2"),
+    url("../fonts/ObjectSans-Slanted.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $fontOSHeavy;
+  font-display: auto;
+  src: url("../fonts/ObjectSans-Heavy.woff2") format("woff2"),
+    url("../fonts/ObjectSans-Heavy.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $fontOSHeavySlanted;
+  font-display: auto;
+  src: url("../fonts/ObjectSans-HeavySlanted.woff2") format("woff2"),
+    url("../fonts/ObjectSans-HeavySlanted.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 *,
 *::before,
 *::after {
@@ -10,20 +52,13 @@ body {
   min-width: 300px;
   margin: 0;
   padding: 0;
-  font-family: "IBM Plex Sans", "Arial", sans-serif;
+  font-family: $fontOS;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: $text-color;
 
   overflow-x: hidden;
-}
-
-h1 {
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  font-size: 24px;
 }
 
 img {

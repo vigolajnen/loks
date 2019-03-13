@@ -6,6 +6,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  padding: 0 80px;
+
   &--hidden {
     transform: translate3d(0, -90px, 0);
   }

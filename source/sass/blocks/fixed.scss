@@ -5,24 +5,28 @@
   top: 0;
   z-index: 9;
 
-  background: #fff;
-  border-bottom: 1px solid #f3f3f3;
+  // background: #fff;
+  // border-bottom: 1px solid #f3f3f3;
 
 
   transform: translateZ(0);
   transition: all .55s;
 
   @media (min-width: $tablet-width) {
-    height: 81px;
+    height: 72px;
   }
 }
 
 .fixed-top {
   top: 0;
-  border-bottom: 1px solid #E8E8E8;
+  background-color: #003f73;
 }
 
 .fixed-bottom {
   top: -100px;
   transform: translate3d(0, -100%, 0);
+}
+
+.header-mobile--dark {
+  background-color: #003f73;
 }

@@ -36,9 +36,9 @@ $(window).ready(function () {
     var dY = scrolled - oldScrollY;
 
     if (dY > 0) {
-      div.className = "fixed fixed-bottom";
+      div.className = "page-header fixed fixed-bottom";
     } else {
-      div.className = "fixed fixed-top";
+      div.className = "page-header fixed fixed-top";
     }
 
     if ($(window).scrollTop() < 60) {

@@ -15,6 +15,10 @@
     }
   }
 
+  &__title {
+    margin-bottom: 30px;
+  }
+
   &__list {
     @include listReset();
   }

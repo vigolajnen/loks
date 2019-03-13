@@ -4,7 +4,46 @@
     padding: 4rem 3.5rem;
   }
 
+  &__title {
+    margin-bottom: 40px;
+  }
+
   &__list {
     @include listReset();
+  }
+
+  &__item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 36px;
+  }
+
+  &__date {
+    display: block;
+    margin-bottom: 24px;
+    line-height: normal;
+    font-size: 14px;
+
+    color: #616161;
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__name {
+    margin: 0;
+    margin-bottom: 26px;
+    line-height: 26px;
+    font-size: 21px;
+
+    color: #1F1F1F;
+  }
+  &__source {
+    display: block;
+    margin-bottom: 36px;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #005BA6;
+    text-decoration: none;
   }
 }

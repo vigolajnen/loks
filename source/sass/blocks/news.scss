@@ -20,6 +20,7 @@
 
     @include respond-above(md) {
       padding-left: 5rem;
+      padding-top: 62px;
       width: 60%;
     }
   }
@@ -35,5 +36,57 @@
 
   &__list {
     @include listReset();
+  }
+  &__title {
+    margin-bottom: 26px;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 72px;
+  }
+
+  &__date {
+    width: 13%;
+    line-height: 25px;
+    font-size: 15px;
+
+    color: #616161;
+
+    text-align: center;
+  }
+  &__info {
+    width: 76%;
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__name {
+    margin: 0;
+    margin-bottom: 24px;
+    line-height: 27px;
+    font-size: 24px;
+
+    color: #1F1F1F;
+  }
+  &__intro {
+    margin: 0;
+    line-height: 25px;
+    font-size: 15px;
+
+    color: #616161;
+  }
+
+  &__number {
+    display: block;
+    margin-bottom: 20px;
+    line-height: 47px;
+    font-size: 92px;
+
+    color: #005BA6;
+    font-weight: 600;
   }
 }
